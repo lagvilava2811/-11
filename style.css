@@ -1,0 +1,872 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.logo-link:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.dot {
+    width: 24px;
+    height: 24px;
+    background-color: #f59e0b;
+    border-radius: 50%;
+}
+
+.name {
+    color: #000;
+}
+
+.title {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #f59e0b;
+}
+
+
+.main {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    flex: 1;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.profile-section {
+    flex: 0 0 auto;
+}
+
+.profile-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.greeting {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 500px;
+}
+
+
+.buttons-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 2px solid #000;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.btn-resume {
+    background-color: #f59e0b;
+    color: #000;
+}
+
+.btn-projects {
+    background-color: #ef4444;
+    color: #000;
+}
+
+.btn-contact {
+    background-color: #6ee7b7;
+    color: #000;
+}
+
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 60px 0 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #555;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;  }
+
+.social a:hover {
+    color: #f59e0b;
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer-right p {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.footer-right a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #f59e0b;
+}
+
+
+.main-resume {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.resume-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #000;
+    padding-top: 20px;
+}
+
+.resume-section {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    gap: 120px;
+    align-items: flex-start;
+}
+
+.resume-section:last-child {
+    border-bottom: none;
+}
+
+.section-left {
+    flex: 0 0 200px;
+    flex-shrink: 0;
+}
+
+.section-content {
+    flex: 1;
+}
+
+.section-header {
+    display: block;
+}
+
+.section-header h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.section-title-main {
+    color: #f59e0b;
+    display: inline;
+}
+
+.experience-item {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.experience-left {
+    flex: 0 0 100px;
+    text-align: right;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    display: block;
+}
+
+.experience-right {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.degree {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skills-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .greeting {
+        font-size: 36px;
+    }
+
+    .buttons-section {
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-left {
+        flex: 1;
+    }
+
+    .resume-title {
+        font-size: 24px;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+}
+
+/* Projects Page */
+.main-projects {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.projects-title {
+    font-size:32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #000;
+    padding-top: 20px;
+}
+
+.project-item {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.project-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.project-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.project-image {
+    flex: 0 0 280px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Projects Responsive */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+    }
+
+    .project-content {
+        max-width: 100%;
+    }
+
+    .project-image {
+        flex: 1;
+        width: 100%;
+    }
+
+    .projects-title {
+        font-size: 24px;
+    }
+}
+
+/* Contact Page */
+.main-contact {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    min-height: 70vh;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 120px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 0 0 350px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detail-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.detail-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-form-wrapper {
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    background-color: #f59e0b;
+    color: #000;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #e09d0f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+/* Contact Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-info {
+        flex: 1;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile Responsive - Extra Small Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .nav {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .main {
+        padding: 40px 0;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .profile-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .greeting {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: 16px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .buttons-section {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100px;
+        height: 100px;
+        font-size: 13px;
+    }
+
+    /* Resume Mobile */
+    .main-resume {
+        padding: 40px 0;
+    }
+
+    .resume-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .resume-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-left {
+        flex: 1;
+        width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 16px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .experience-left {
+        text-align: left;
+    }
+
+    .date {
+        font-size: 11px;
+    }
+
+    .job-title {
+        font-size: 14px;
+    }
+
+    .job-description {
+        font-size: 12px;
+    }
+
+    .skills-list li {
+        font-size: 12px;
+    }
+
+    /* Projects Mobile */
+    .main-projects {
+        padding: 40px 0;
+    }
+
+    .projects-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .project-item {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+    }
+
+    .project-content {
+        max-width: 100%;
+    }
+
+    .project-name {
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 13px;
+    }
+
+    .project-image {
+        flex: 1;
+        width: 100%;
+    }
+
+    /* Contact Mobile */
+    .main-contact {
+        padding: 40px 0;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info {
+        flex: 1;
+        width: 100%;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-subtitle {
+        font-size: 13px;
+    }
+
+    .contact-details {
+        gap: 20px;
+    }
+
+    .detail-item h3 {
+        font-size: 12px;
+    }
+
+    .detail-item p {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .form-group textarea {
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 40px 0 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-section h3 {
+        font-size: 12px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
+
+    .footer-right p {
+        font-size: 11px;
+    }
+}
